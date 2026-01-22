@@ -1,0 +1,16 @@
+---
+import BaseLayout from '../../layouts/base-layout.astro';
+import { GridPattern } from '../../components/grid-pattern';
+import { PageFooter } from '../../components/page-footer';
+import { DefaultDashboard } from './_components';
+
+import '@fontsource-variable/dosis';
+
+---
+<BaseLayout title="Dashboard">
+  <main class="bg-sky-950 text-white min-h-screen px-6 pt-14 pb-40 flex flex-col items-center">
+    <GridPattern className="grid-pattern" />
+    <DefaultDashboard client:only="react" />
+  </main>
+  <PageFooter className="bg-[#08283d]" />
+</BaseLayout>

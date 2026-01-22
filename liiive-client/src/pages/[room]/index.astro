@@ -1,0 +1,15 @@
+---
+import BaseLayout from '../../layouts/base-layout.astro';
+import { Room } from './_components';
+
+import '@fontsource-variable/dosis';
+
+export const prerender = false;
+
+const { room } = Astro.params;
+---
+<BaseLayout>
+  <Room 
+    client:only="react"
+    id={room!}>
+</BaseLayout>

@@ -1,0 +1,22 @@
+.animated-glow-wrapper {
+  box-sizing: content-box;
+  display: flex;
+  height: 500px;
+  justify-content: center;
+  max-height: 100%;
+  overflow: hidden;
+  padding: 125px 0;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.animated-glow {
+  filter: blur(80px);
+  -webkit-filter: blur(80px);
+  height: 240px;
+  opacity: 0.5;
+  pointer-events: none;
+  will-change: background, transform, width;
+}

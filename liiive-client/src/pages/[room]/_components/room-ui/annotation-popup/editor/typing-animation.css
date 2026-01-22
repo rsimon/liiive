@@ -1,0 +1,74 @@
+.typing-animation {
+  --anim-dot-size: 3px;
+  --anim-color: hsl(var(--primary));
+  --anim-h-offset: 6px;
+  --anim-v-offset: -5px;
+}
+
+
+.typing-animation > div {
+  animation: dot-typing 1.4s infinite linear;
+  background-color: var(--anim-color);
+  border-radius: var(--anim-dot-size);
+  box-shadow: 
+    calc(9999px - var(--anim-h-offset)) 0 0 0 var(--anim-color), 
+    9999px 0 0 0 var(--anim-color), 
+    calc(9999px + var(--anim-h-offset)) 0 0 0 var(--anim-color);
+  color: var(--anim-color);
+  height: var(--anim-dot-size);
+  left: calc(-9999px + var(--anim-h-offset));
+  position: relative;
+  width: var(--anim-dot-size);
+}
+
+/* https://codepen.io/nzbin/pen/GGrXbp */
+@keyframes dot-typing {
+  0% {
+    box-shadow:
+      calc(9999px - var(--anim-h-offset)) 0 0 0 var(--anim-color), 
+      9999px 0 0 0 var(--anim-color), 
+      calc(9999px + var(--anim-h-offset)) 0 0 0 var(--anim-color);
+  }
+  11.71% {
+    box-shadow: 
+      calc(9999px - var(--anim-h-offset)) calc(var(--anim-v-offset)) 0 0 var(--anim-color), 
+      9999px 0 0 0 var(--anim-color), 
+      calc(9999px + var(--anim-h-offset)) 0 0 0 var(--anim-color);
+  }
+  21.43% {
+    box-shadow: 
+      calc(9999px - var(--anim-h-offset)) 0 0 0 var(--anim-color), 
+      9999px 0 0 0 var(--anim-color), 
+      calc(9999px + var(--anim-h-offset)) 0 0 0 var(--anim-color);
+  }
+  32.14% {
+    box-shadow: 
+      calc(9999px - var(--anim-h-offset)) 0 0 0 var(--anim-color), 
+      9999px calc(var(--anim-v-offset)) 0 0 var(--anim-color), 
+      calc(9999px + var(--anim-h-offset)) 0 0 0 var(--anim-color);
+  }
+  42.86% {
+    box-shadow: 
+      calc(9999px - var(--anim-h-offset)) 0 0 0 var(--anim-color), 
+      9999px 0 0 0 var(--anim-color), 
+      calc(9999px + var(--anim-h-offset)) 0 0 0 var(--anim-color);
+  }
+  53.57% {
+    box-shadow: 
+      calc(9999px - var(--anim-h-offset)) 0 0 0 var(--anim-color), 
+      9999px 0 0 0 var(--anim-color), 
+      calc(9999px + var(--anim-h-offset)) calc(var(--anim-v-offset)) 0 0 var(--anim-color);
+  }
+  64.29% {
+    box-shadow: 
+      calc(9999px - var(--anim-h-offset)) 0 0 0 var(--anim-color), 
+      9999px 0 0 0 var(--anim-color), 
+      calc(9999px + var(--anim-h-offset)) 0 0 0 var(--anim-color);
+  }
+  75.00% {
+    box-shadow: 
+      calc(9999px - var(--anim-h-offset)) 0 0 0 var(--anim-color), 
+      9999px 0 0 0 var(--anim-color), 
+      calc(9999px + var(--anim-h-offset)) 0 0 0 var(--anim-color);
+  }
+}

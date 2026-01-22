@@ -1,0 +1,28 @@
+---
+import BaseLayout from '../layouts/base-layout.astro';
+import { SplashPage } from './_index';
+import { InstantSpawn } from '../components';
+
+import '@fontsource-variable/dosis';
+
+export const prerender = false;
+
+const referer = Astro.request.headers.get('referer');
+
+const isInstantSpawn = Boolean(Astro.url.searchParams.get('iiif-content'));
+---
+{isInstantSpawn ? (
+	<InstantSpawn client:only="react" referer={referer} />
+) : (
+	<BaseLayout title="Real-time Collaborative Annotation for IIIF Collections">
+		<SplashPage client:only="react" />
+	</BaseLayout>
+	<style>
+		html, body {
+			background-color: #082f49;
+			scroll-behavior: smooth;
+		}
+	</style>
+)}
+
+

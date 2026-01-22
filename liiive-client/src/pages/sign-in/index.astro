@@ -1,0 +1,16 @@
+---
+import BaseLayout from '../../layouts/base-layout.astro';
+import { GridPattern } from '../../components/grid-pattern';
+import { SignIn } from './_components';
+
+import '@fontsource-variable/dosis';
+---
+<BaseLayout>
+	<main class="bg-sky-950 text-white w-full h-full min-h-screen flex flex-col items-center justify-center px-4">
+		<GridPattern />
+		<h2 class="text-xl mb-4 tracking-wide">
+			Sign In
+		</h2>
+		<SignIn client:only="react" />
+	</main>
+</BaseLayout>

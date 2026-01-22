@@ -1,0 +1,11 @@
+.grid-pattern {
+  opacity: 0.25;
+  mix-blend-mode: hard-light;
+  height: 640px;
+  left: 0;  
+  position: absolute;
+  top: 0;
+  width: 100%;
+  -webkit-mask-image: radial-gradient(farthest-corner at 100% 0%, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0) 70%);
+          mask-image: radial-gradient(farthest-corner at 100% 0%, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0) 70%);
+}

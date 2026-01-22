@@ -1,0 +1,65 @@
+.a9s-popup.a9s-image-popup {
+  z-index: 50;
+}
+
+.a9s-popup .reply::before, .a9s-popup .reply::after {
+  content: '';
+  border-style: solid;
+  left: 6px;
+  position: absolute;
+  top: -.5px;
+}
+
+.a9s-popup .reply::before {
+  border-left-width: 1.5px;
+  height: 100%;
+}
+
+.a9s-popup .reply::after {
+  border-bottom-width: 1.5px;
+  width: 14px;
+  height: 33px;
+}
+
+.a9s-popup *::-webkit-resizer {
+  background: transparent;
+  -webkit-appearance: none;
+}
+
+.a9s-popup *::-moz-resizer {
+  background: transparent; 
+  display: none;
+}
+
+.reply:last-child::before {
+  border: none;
+}
+
+.reply:last-child::after {
+  border-left-width: 1.5px;
+  border-bottom-left-radius: 3px;
+}
+
+.tiptap {
+  resize: vertical;
+}
+
+.tiptap:focus {
+  outline: none;
+}
+
+.tiptap strong {
+  font-weight: 600;
+}
+
+.tiptap ul, 
+.tiptap ol {
+  list-style-type: disc;
+  padding: 0 1rem;
+  margin: 1.25rem 1rem 1.25rem 0.4rem;
+}
+
+.tiptap li p {
+  margin-top: 0.25em;
+  margin-bottom: 0.25em;
+}

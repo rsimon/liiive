@@ -1,0 +1,71 @@
+---
+import '../styles/globals.css';
+
+import '@fontsource/nunito-sans/300.css';
+import '@fontsource/nunito-sans/400.css';
+import '@fontsource/nunito-sans/500.css';
+import '@fontsource/nunito-sans/600.css';
+import '@fontsource/nunito-sans/700.css';
+
+import nunitoSans300woff from '@fontsource/nunito-sans/files/nunito-sans-latin-300-normal.woff2?url';
+import nunitoSans400woff from '@fontsource/nunito-sans/files/nunito-sans-latin-400-normal.woff2?url';
+import nunitoSans500woff from '@fontsource/nunito-sans/files/nunito-sans-latin-500-normal.woff2?url';
+import nunitoSans600woff from '@fontsource/nunito-sans/files/nunito-sans-latin-600-normal.woff2?url';
+import nunitoSans700woff from '@fontsource/nunito-sans/files/nunito-sans-latin-700-normal.woff2?url';
+
+const title = Astro.props.title || Astro.props.frontmatter?.title || 'Real-time Collaborative Annotation for IIIF Collections';
+const description = Astro.props.description || Astro.props.frontmatter?.description || 'Collaborate in real-time on IIIF image collections. Annotate, view, and explore high-resolution images with your team. Even without a login.';
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, interactive-widget=resizes-content" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="description" content={description} />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://liiive.now/">
+    <meta property="og:title" content={title}>
+    <meta property="og:description" content={description}>
+    <meta property="og:image" content="https://liiive.now/images/social-preview.jpg">
+    <meta property="og:image:width" content="1600">
+    <meta property="og:image:height" content="800">
+    <meta property="og:site_name" content="liiive">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://liiive.now/">
+    <meta name="twitter:title" content={title}>
+    <meta name="twitter:description" content={description}>
+    <meta name="twitter:image" content="https://liiive.now/images/social-preview.jpg">
+    <meta name="twitter:site" content="@aboutgeo">
+    <meta name="twitter:creator" content="@aboutgeo">
+
+    <link rel="preload" as="font" type="font/woff2" href={nunitoSans300woff} crossorigin="anonymous" />
+    <link rel="preload" as="font" type="font/woff2" href={nunitoSans400woff} crossorigin="anonymous" />
+    <link rel="preload" as="font" type="font/woff2" href={nunitoSans500woff} crossorigin="anonymous" />
+    <link rel="preload" as="font" type="font/woff2" href={nunitoSans600woff} crossorigin="anonymous" />
+    <link rel="preload" as="font" type="font/woff2" href={nunitoSans700woff} crossorigin="anonymous" />
+    <title>liiive | {title}</title>
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
+
+<style is:global>
+  :root {
+    --iiif-red: #ee2535;
+    --iiif-blue: #0275a5;
+  }
+
+  .openseadragon-canvas {
+    outline: none;
+  }
+</style>
+
+

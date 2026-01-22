@@ -1,0 +1,13 @@
+---
+import BaseLayout from '../../layouts/base-layout.astro';
+import { GridPattern } from '../../components/grid-pattern';
+import { SignUp } from './_components';
+
+import '@fontsource-variable/dosis';
+---
+<BaseLayout>
+	<main class="bg-sky-950 text-white min-h-screen flex flex-col items-center justify-center py-8">
+		<GridPattern />
+		<SignUp client:only="react" />
+	</main>
+</BaseLayout>
