@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 import clsx from 'clsx';
 import { Tooltip, TooltipTrigger, TooltipContent } from '../../../../../../shadcn/tooltip';
 import { useRoomUIState } from '../../../../_hooks';
-import { Search as SearchInput } from '../Finder';
+import { Search as SearchInput } from '../finder';
 
 interface SearchProps {
 

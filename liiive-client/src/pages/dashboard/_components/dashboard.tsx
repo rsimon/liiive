@@ -22,7 +22,7 @@ export interface DashboardProps <T extends MyProfileInformation> {
 
 }
 
-export interface DashboardAccountSettingsProps<T extends MyProfileInformation> {
+export interface DashboardAccountSettingsProps<T extends MyProfileInformation = MyProfileInformation> {
 
   className?: string;
 

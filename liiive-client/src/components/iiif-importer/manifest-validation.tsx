@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import clsx from 'clsx';
 import { Ban, Check, CloudOff } from 'lucide-react';
-import Loader from 'react-spinners/MoonLoader';
+import { MoonLoader}  from 'react-spinners';
 import { useManifestValidation } from '../../hooks/use-manifest-validation';
 import type { ManifestValidationFailure, ManifestValidationResult } from '../../types';
 
@@ -27,7 +27,7 @@ export const ManifestValidation = (props: ManifestValidationProps) => {
   return (
     <div className={clsx(color, 'absolute -bottom-8 mt-4 flex gap-2 items-center text-sm')}>
       {isFetching ? (
-        <Loader 
+        <MoonLoader 
           size={12}
           color='#ffffff' />
       ) : result ? (
