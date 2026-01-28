@@ -60,5 +60,3 @@ Contributions are welcome! Please use the [issue tracker](https://github.com/rsi
 ## 7. License
 
 liiive is licensed under the terms of the [MIT License](LICENSE).
-
-For convenience, this repository includes Docker configuration for the Supabase backend. Supabase is licensed under the [Apache 2 License](supabase/docker/LICENSE).
