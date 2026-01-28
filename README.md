@@ -4,6 +4,8 @@ liiive is an open-source, web-based tool for **real-time collaborative annotatio
 
 Explore visual materials like artworks, manuscripts, maps, or historical documents together–live, in the browser–with shared cursors, synchronized annotations, and rich-text comments.
 
+![Screenshot of the liiive annotation environment](/screenshot.jpg "Screenshot of the liiive annotation environment")
+
 ## 1. What is liiive?
 
 liiive is a web-based tool that lets users explore and annotate digital images together, in real time. Built on the [IIIF (International Image Interoperability Framework)](https://iiiif.io) standard, it's designed for researchers, educators, students, and cultural heritage professionals working with high-resolution images.
