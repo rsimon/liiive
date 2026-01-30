@@ -60,3 +60,9 @@ Contributions are welcome! Please use the [issue tracker](https://github.com/rsi
 ## 7. License
 
 liiive is licensed under the terms of the [MIT License](LICENSE).
+
+## 8. Supporters
+
+Thanks to the following supporters for funding part of this work:
+- University of Graz [Department of Digital Humanities](https://digital-humanities.uni-graz.at/)
+- [DHInfra.at](https://dhinfra.at) initiative
