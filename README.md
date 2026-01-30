@@ -66,5 +66,4 @@ liiive is licensed under the terms of the [MIT License](LICENSE).
 Thanks to the following supporters for funding parts of this work:
 
 
-- [Department of Digital Humanities](https://digital-humanities.uni-graz.at/), University of Graz, Project [DHInfra.at](https://dhinfra.at), funded by 2023-2026 "(Digitale) Forschungsinfrastruktur"
-Austrian Federal Ministry of Women, Science and Research
+- [Department of Digital Humanities](https://digital-humanities.uni-graz.at/), University of Graz – Project [DHInfra.at](https://dhinfra.at) / Austrian Federal Ministry of Women, Science and Research
