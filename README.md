@@ -60,7 +60,7 @@ The easiest way to try liiive–no installation needed–is via the hosted servi
 
 ## 5. Self-Hosting
 
-**Self-hosting setup & instructions will be available by the end of February**
+**Self-hosting setup & instructions will be available by the end of February.**
 
 ## 6. Contributing
 
