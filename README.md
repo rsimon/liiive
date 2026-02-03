@@ -1,3 +1,12 @@
+**Status**: Work in Progress
+
+This repository will provide everything you need to self-host liiive by the end of February. Read more:
+
+https://liiive.now/blog/2026-01-liiive-goes-open-source/
+
+
+---
+
 # liiive: Collaborative Annotation for IIIF Images
 
 liiive is an open-source, web-based tool for **real-time collaborative annotation** of IIIF images.
@@ -51,7 +60,7 @@ The easiest way to try liiive–no installation needed–is via the hosted servi
 
 ## 5. Self-Hosting
 
-Coming soon!
+**Self-hosting setup & instructions will be available by the end of February**
 
 ## 6. Contributing
 
