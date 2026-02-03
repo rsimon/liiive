@@ -1,5 +1,8 @@
 .astro/
 dist/
 node_modules/
+supabase/docker/volumes/db/data/*
+supabase/docker/volumes/storage/**/*
+supabase/docker/volumes/traefik/**/*
 .env
 .DS_Store
