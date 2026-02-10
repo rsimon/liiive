@@ -69,6 +69,21 @@ The easiest way to try liiive–no installation needed–is via the hosted servi
 
 ## 6. Self-Hosting
 
+liiive can be self-hosted in two modes: as a local development setup intended for frontend development, and a fully containerized production deployment for institutional or public use.
+
+### 6.1 Prerequisites
+
+To deploy liiive, ensure you have the following installed:
+
+- Docker 24.0+ and Docker Compose 2.x
+- Node.js 20+ and npm (for development deployment only)
+
+### 6.2 Development Deployment
+
+**Self-hosting setup & instructions will be available by the end of February.**
+
+### 6.3 Production Deployment
+
 **Self-hosting setup & instructions will be available by the end of February.**
 
 ## 7. Contributing
