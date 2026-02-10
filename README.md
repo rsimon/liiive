@@ -80,11 +80,11 @@ To deploy liiive, ensure you have the following installed:
 
 ### 6.2 Development Deployment
 
-**Self-hosting setup & instructions will be available by the end of February.**
+** **Self-hosting setup & instructions will be available by the end of February.** **
 
 ### 6.3 Production Deployment
 
-**Self-hosting setup & instructions will be available by the end of February.**
+** **Self-hosting setup & instructions will be available by the end of February.** **
 
 ## 7. Contributing
 
