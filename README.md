@@ -49,7 +49,16 @@ liiive is not intended to be:
 - A digital asset management system
 - A replacement for long-term annotation repositories
 
-## 4. Try liiive
+## 4. High-Level Architecture
+
+liiive consists of:
+- A web frontend built with [Astro](https://astro.build/) and [React](https://react.dev/)
+- Real-time collaborative synchronization using [Yjs](https://yjs.dev/) and [Hocuspocus](https://github.com/ueberdosis/hocuspocus)
+- Backend services (database, storage, authentication) powered by [Supabase](https://supabase.com/)
+- Supabase Studio backend admin environment (optional)
+- Docker-based infrastructure for fully self-hosted deployment
+
+## 5. Try liiive
 
 The easiest way to try liiive–no installation needed–is via the hosted service at [liiive.now](https://liiive.now).
 
@@ -58,21 +67,21 @@ The easiest way to try liiive–no installation needed–is via the hosted servi
 3. Share your unique room link with others
 4. Collaborate instantly, even without a login
 
-## 5. Self-Hosting
+## 6. Self-Hosting
 
 **Self-hosting setup & instructions will be available by the end of February.**
 
-## 6. Contributing
+## 7. Contributing
 
 Contributions are welcome! Please use the [issue tracker](https://github.com/rsimon/liiive/issues) to discuss major changes or new features before submitting a pull request.
 
-## 7. License
+## 8. License
 
 liiive is licensed under the terms of the [MIT License](LICENSE).
 
 For convenience, this repository includes Docker configuration for the Supabase backend. Supabase is licensed under the [Apache 2 License](supabase/docker/LICENSE).
 
-## 8. Supporters
+## 9. Supporters
 
 Thanks to the following supporters for funding parts of this work:
 
