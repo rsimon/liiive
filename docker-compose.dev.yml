@@ -1,0 +1,22 @@
+services:
+  liiive-server:
+    container_name: liiive-server
+    build: 
+      context: ${PROJECT_ROOT}/liiive-server
+    ports:
+      - "1234:1234"
+    restart: always
+    depends_on:
+      db:
+        condition: service_healthy
+
+  studio:
+    ports:
+      - "3000:3000"
+
+  kong:
+    ports:
+      - ${KONG_HTTP_PORT}:8000/tcp
+      - ${KONG_HTTPS_PORT}:8443/tcp
+    volumes:
+      - ${SUPABASE_ROOT}/volumes/api/kong.yml:/home/kong/temp.yml:ro,z
