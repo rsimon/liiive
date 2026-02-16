@@ -1,12 +1,3 @@
-**Status**: Work in Progress
-
-This repository will provide everything you need to self-host liiive by the end of February. Read more:
-
-https://liiive.now/blog/2026-01-liiive-goes-open-source/
-
-
----
-
 # liiive: Collaborative Annotation for IIIF Images
 
 liiive is an open-source, web-based tool for **real-time collaborative annotation** of IIIF images.
@@ -49,7 +40,13 @@ liiive is not intended to be:
 - A digital asset management system
 - A replacement for long-term annotation repositories
 
-## 4. High-Level Architecture
+## 4. Open Source version vs liiive.now
+
+This repository contains the fully functional, self-hostable open-source core of liiive.
+
+The open source core is the same codebase that powers [liiive.now](https://liiive.now), a hosted service with managed infrastructure, unlimited free basic accounts, and an optional paid plan for additional storage.
+
+## 5. High-Level Architecture
 
 liiive consists of:
 - A web frontend built with [Astro](https://astro.build/) and [React](https://react.dev/)
@@ -58,7 +55,7 @@ liiive consists of:
 - Supabase Studio backend admin environment (optional)
 - Docker-based infrastructure for fully self-hosted deployment
 
-## 5. Try liiive
+## 6. Try liiive
 
 The easiest way to try liiive–no installation needed–is via the hosted service at [liiive.now](https://liiive.now).
 
@@ -67,36 +64,58 @@ The easiest way to try liiive–no installation needed–is via the hosted servi
 3. Share your unique room link with others
 4. Collaborate instantly, even without a login
 
-## 6. Self-Hosting
+## 7. Self-Hosting
 
 liiive can be self-hosted in two modes: as a local development setup intended for frontend development, and a fully containerized production deployment for institutional or public use.
 
-### 6.1 Prerequisites
+### 7.1 Prerequisites
 
 To deploy liiive, ensure you have the following installed:
 
 - Docker 24.0+ and Docker Compose 2.x
 - Node.js 20+ and npm (for development deployment only)
 
-### 6.2 Development Deployment
+### 7.2 Development Deployment
 
-** **Self-hosting setup & instructions will be available by the end of February.** **
+The development setup is intended for developers working on the liiive client, with hot reloading and local backend.
 
-### 6.3 Production Deployment
+In development mode, the Supabase backend and admin UI ("Supabase Studio") as well as the liiive WebSocket server (Yjs/Hocuspocus) run in Docker and are exposed on different localhost ports.
 
-** **Self-hosting setup & instructions will be available by the end of February.** **
+The full deployment guide is available here: [development deployment](guides/dev-deployment.md)
 
-## 7. Contributing
+### 7.3 Production Deployment
+
+The production deployment is a fully containerized setup for a Linux/Docker host, with all service components: 
+
+- Supabase backend (database, auth, storage)
+- Supabase Studio (backend admin UI, optional)
+- liiive WebSocket server
+- liiive client application
+- Traefik reverse proxy
+
+**Requirements:**
+
+- Your own Linux production server
+- Your own registered domain name
+- Multiple subdomains, for example:
+  - `app.example.org` – frontend
+  - `ws.example.org` – WebSocket server
+  - `api.example.org` – backend API
+  - `studio.example.org` – Supabase Studio admin UI (optional)
+
+The full deployment guide is available here: [production deployment](guides/prod-deployment.md)
+
+## 8. Contributing
 
 Contributions are welcome! Please use the [issue tracker](https://github.com/rsimon/liiive/issues) to discuss major changes or new features before submitting a pull request.
 
-## 8. License
+## 9. License
 
 liiive is licensed under the terms of the [MIT License](LICENSE).
 
 For convenience, this repository includes Docker configuration for the Supabase backend. Supabase is licensed under the [Apache 2 License](supabase/docker/LICENSE).
 
-## 9. Supporters
+## 10. Supporters
 
 Thanks to the following supporters for funding parts of this work:
 
