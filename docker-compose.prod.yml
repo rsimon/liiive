@@ -1,0 +1,98 @@
+services: 
+  traefik:
+    image: traefik:v3.2
+    container_name: liiive-traefik
+    restart: always
+    command:
+      # Enable Docker provider
+      - "--providers.docker=true"
+      - "--providers.docker.exposedbydefault=false"
+      
+      # Entrypoints (ports)
+      - "--entrypoints.web.address=:80"
+      - "--entrypoints.websecure.address=:443"
+
+      # HTTP to HTTPS redirect
+      - "--entrypoints.web.http.redirections.entrypoint.to=websecure"
+      - "--entrypoints.web.http.redirections.entrypoint.scheme=https"
+      - "--entrypoints.web.http.redirections.entrypoint.permanent=true"
+
+      # Enable Traefik dashboard (optional)
+      # - "--api.dashboard=true"
+      # - "--api.insecure=true"  # Remove in production!
+
+      # Let's Encrypt HTTPS
+      - "--certificatesresolvers.le.acme.tlschallenge=true"
+      - "--certificatesresolvers.le.acme.email=${LE_EMAIL}"
+      - "--certificatesresolvers.le.acme.storage=/letsencrypt/acme.json"
+
+      # Logging
+      - "--log.level=INFO"
+      - "--accesslog=true"
+    ports:
+      - "80:80"
+      - "443:443"
+      # - "8080:8080"  # Dashboard
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - ${PROJECT_ROOT}/supabase/docker/volumes/traefik/letsencrypt:/letsencrypt
+
+
+  studio:
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.studio.rule=Host(`${STUDIO_DOMAIN}`)"
+      - "traefik.http.routers.studio.entrypoints=websecure"
+      - "traefik.http.routers.studio.tls.certresolver=le"
+      - "traefik.http.routers.studio.middlewares=studio-auth,studio-allow-ip"
+      - "traefik.http.middlewares.studio-auth.basicauth.users=${DASHBOARD_USERNAME}:${DASHBOARD_PASSWORD}"
+      - "traefik.http.middlewares.studio-allow-ip.ipallowlist.sourcerange=192.168.0.0/16,127.0.0.1"
+      - "traefik.http.services.studio.loadbalancer.server.port=3000"
+
+
+  liiive-server:
+    container_name: liiive-server
+    build: 
+      context: ${PROJECT_ROOT}/liiive-server
+    expose:
+      - "1234"
+    restart: always
+    depends_on:
+      db:
+        condition: service_healthy
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.websocket.rule=Host(`${WS_DOMAIN}`)"
+      - "traefik.http.routers.websocket.entrypoints=websecure"
+      - "traefik.http.routers.websocket.tls.certresolver=le"
+      - "traefik.http.routers.websocket.priority=10"
+      - "traefik.http.services.websocket.loadbalancer.server.port=1234"
+  
+
+  liiive-client:
+    container_name: liiive-client
+    build:
+      context: ${PROJECT_ROOT}/liiive-client
+    expose:
+      - "4321"
+    restart: always
+    depends_on:
+      liiive-server:
+        condition: service_started
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.app.rule=Host(`${APP_DOMAIN}`)"
+      - "traefik.http.routers.app.entrypoints=websecure"
+      - "traefik.http.routers.app.tls.certresolver=le"
+      - "traefik.http.routers.app.priority=1"
+      - "traefik.http.services.app.loadbalancer.server.port=4321"
+
+
+  kong:
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.api.rule=Host(`${API_DOMAIN}`)"
+      - "traefik.http.routers.api.entrypoints=websecure"
+      - "traefik.http.routers.api.tls.certresolver=le"
+      - "traefik.http.routers.api.priority=100"
+      - "traefik.http.services.api.loadbalancer.server.port=8000"
