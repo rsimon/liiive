@@ -3,6 +3,14 @@ services:
     image: traefik:v3.6
     container_name: liiive-traefik
     restart: always
+    entrypoint:
+      - /bin/sh
+      - -c
+      - |
+        apk add --no-cache apache2-utils
+        htpasswd -nbB $$DASHBOARD_USERNAME $$DASHBOARD_PASSWORD > /etc/traefik/usersfile
+        traefik $$@
+      - --
     command:
       # Enable Docker provider
       - "--providers.docker=true"
@@ -45,7 +53,8 @@ services:
       - "traefik.http.routers.studio.entrypoints=websecure"
       - "traefik.http.routers.studio.tls.certresolver=le"
       - "traefik.http.routers.studio.middlewares=studio-auth,studio-allow-ip"
-      - "traefik.http.middlewares.studio-auth.basicauth.users=${DASHBOARD_USERNAME}:${DASHBOARD_PASSWORD}"
+      # - "traefik.http.middlewares.studio-auth.basicauth.users=${DASHBOARD_USERNAME}:${DASHBOARD_PASSWORD}"
+      - "traefik.http.middlewares.studio-auth.basicauth.usersfile=/etc/traefik/usersfile"
       - "traefik.http.middlewares.studio-allow-ip.ipallowlist.sourcerange=192.168.0.0/16,127.0.0.1"
       - "traefik.http.services.studio.loadbalancer.server.port=3000"
 
