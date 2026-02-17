@@ -154,7 +154,7 @@ In this section, you will configure each service in the order they are required.
 
 ## 3. Traefik Reverse Proxy Configuration
 
-The production deployment uses Traefik as a reverse proxy to route incoming requests based on hostnames. HTTPS is automatically handled via [Let's Encrypt](https://letsencrypt.org/). 
+The production deployment uses Traefik as a reverse proxy to route incoming requests based on hostnames. HTTPS is automatically handled via [Let's Encrypt](https://letsencrypt.org/). Traefik also provides HTTP Basic Authentication for the Supabase Studio dashboard. 
 
 1. Change into the `traefik` directory:
 
@@ -168,7 +168,15 @@ The production deployment uses Traefik as a reverse proxy to route incoming requ
    cp .env.example .env
    ```
 
-3. Edit `.env` to match your domain names and contact email for Let's Encrypt.
+3. Edit `.env` to set your domain names and Let's Encrypt contact email.
+
+4. Edit `.env` to set a secure username and password for Studio access. Default credentials (liiive / liiive) are provided for convenience but **must be replaced before going into production**. To generate your own credentials, run:
+
+   ```sh
+   htpasswd -nbB yourusername yourpassword | sed 's/\$/\$\$/g'
+   ```
+
+   Then paste the output as the value of `STUDIO_AUTH`.
 
 > [!IMPORTANT]
 > Make sure the domains and subdomains match your public DNS A records. Traefik will automatically request TLS certificates from Let’s Encrypt for these domains.
