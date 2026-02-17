@@ -145,12 +145,12 @@ In this section, you will configure each service in the order they are required.
 3. Update the following values in `.env`:
   - `PUBLIC_SUPABASE_URL` 
     Public HTTPS URL of the Supabase API gateway, e.g. `https://api.my-liiive.org`.
-  - `PUBLIC_HOCUSPOCUS_URL`
-    Public URL of the liiive realtime server, e.g. `https://ws.my-liiive.org`
   - `PUBLIC_SUPABASE_API_KEY`
     Supabase anonymous key (`ANON_KEY`) from your Supabase `.env` file.
   - `SUPABASE_SECRET_SERVICE_API_KEY` 
     Supabase service role key (`SERVICE_ROLE_KEY`).
+  - `PUBLIC_HOCUSPOCUS_URL`
+    Public URL of the liiive realtime server, e.g. `https://ws.my-liiive.org`
 
 ## 3. Traefik Reverse Proxy Configuration
 
