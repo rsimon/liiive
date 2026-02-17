@@ -53,10 +53,7 @@ services:
       - "traefik.http.routers.studio.entrypoints=websecure"
       - "traefik.http.routers.studio.tls.certresolver=le"
       - "traefik.http.routers.studio.middlewares=studio-auth"
-      # - "traefik.http.routers.studio.middlewares=studio-auth,studio-allow-ip"
-      # - "traefik.http.middlewares.studio-auth.basicauth.users=${DASHBOARD_USERNAME}:${DASHBOARD_PASSWORD}"
-      - "traefik.http.middlewares.studio-auth.basicauth.usersfile=/etc/traefik/usersfile"
-      # - "traefik.http.middlewares.studio-allow-ip.ipallowlist.sourcerange=192.168.0.0/16,127.0.0.1"
+      - "traefik.http.middlewares.studio-auth.basicauth.users=${STUDIO_AUTH}"
       - "traefik.http.services.studio.loadbalancer.server.port=3000"
 
 
