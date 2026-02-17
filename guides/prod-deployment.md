@@ -159,7 +159,7 @@ The production deployment uses Traefik as a reverse proxy to route incoming requ
 1. Change into the `traefik` directory:
 
    ```sh 
-   cd ../../traefik
+   cd ../traefik
    ```
 
 2. Create a local environment file:
