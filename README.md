@@ -40,22 +40,7 @@ liiive is not intended to be:
 - A digital asset management system
 - A replacement for long-term annotation repositories
 
-## 4. Open Source version vs liiive.now
-
-This repository contains the fully functional, self-hostable open-source core of liiive.
-
-The open source core is the same codebase that powers [liiive.now](https://liiive.now), a hosted service with managed infrastructure, unlimited free basic accounts, and an optional paid plan for additional storage.
-
-## 5. High-Level Architecture
-
-liiive consists of:
-- A web frontend built with [Astro](https://astro.build/) and [React](https://react.dev/)
-- Real-time collaborative synchronization using [Yjs](https://yjs.dev/) and [Hocuspocus](https://github.com/ueberdosis/hocuspocus)
-- Backend services (database, storage, authentication) powered by [Supabase](https://supabase.com/)
-- Supabase Studio backend admin environment (optional)
-- Docker-based infrastructure for fully self-hosted deployment
-
-## 6. Try liiive
+## 4. Try liiive
 
 The easiest way to try liiive–no installation needed–is via the hosted service at [liiive.now](https://liiive.now).
 
@@ -63,6 +48,21 @@ The easiest way to try liiive–no installation needed–is via the hosted servi
 2. Hit the 'Go liiive' button
 3. Share your unique room link with others
 4. Collaborate instantly, even without a login
+
+## 5. Open Source version vs liiive.now
+
+This repository contains the fully functional, self-hostable open-source core of liiive.
+
+The open source core is the same codebase that powers [liiive.now](https://liiive.now), a hosted service with managed infrastructure, unlimited free basic accounts, and an optional paid plan for additional storage.
+
+## 6. High-Level Architecture
+
+liiive consists of:
+- A web frontend built with [Astro](https://astro.build/) and [React](https://react.dev/)
+- Real-time collaborative synchronization using [Yjs](https://yjs.dev/) and [Hocuspocus](https://github.com/ueberdosis/hocuspocus)
+- Backend services (database, storage, authentication) powered by [Supabase](https://supabase.com/)
+- Supabase Studio backend admin environment (optional)
+- Docker-based infrastructure for fully self-hosted deployment
 
 ## 7. Self-Hosting
 
