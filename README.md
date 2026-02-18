@@ -52,9 +52,9 @@ The easiest way to try liiive – no installation needed – is via the public h
 1. Paste any URL to a IIIF Presentation or Image manifest in the search box
 2. Hit the 'Go liiive' button
 3. Share your unique room link with others
-4. Collaborate instantly, even without a login
+4. Collaborate instantly – even without a login
 
-liiive.now runs on the same core codebase contained in this repository.
+[liiive.now](https://liiive.now) runs on the same core codebase contained in this repository.
 
 ## 4. Deployment Options
 
