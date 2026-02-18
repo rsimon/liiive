@@ -48,14 +48,12 @@ liiive is a browser-based collaboration tool for exploring and annotating digita
 
 ## 3. Try liiive
 
-The easiest way to try liiive – no installation needed – is via the public hosted service at [liiive.now](https://liiive.now).
+The easiest way to try liiive – no installation needed – is via the public hosted service at [liiive.now](https://liiive.now), which runs on the open-source codebase contained in this repository.
 
 1. Paste any URL to a IIIF Presentation or Image manifest in the search box
 2. Hit the 'Go liiive' button
 3. Share your unique room link with others
 4. Collaborate instantly – even without a login
-
-[liiive.now](https://liiive.now) runs on the same open-source codebase contained in this repository.
 
 ## 4. Architecture
 
@@ -72,7 +70,7 @@ liiive can be used in three ways:
 
 ### 5.1 Public Hosted Service (liiive.now)
 
-The public hosted service at [liiive.now](https://liiive.now) is the quickest way to get started – no setup required. It offers unlimited free basic accounts and an optional paid plan for additional storage, making it well-suited for workshops, teaching and general use.
+The public hosted service at [liiive.now](https://liiive.now) is the fastest way to get started – no setup required. It offers unlimited free basic accounts, with an optional paid plan for additional storage. Built on the same open-source codebase, it's well suited for workshops, teaching, and everyday use.
 
 ### 5.2 Self-Hosting (This Repository)
 
