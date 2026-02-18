@@ -12,12 +12,12 @@ Explore visual materials like artworks, manuscripts, maps, or historical documen
 2. [Key Features](#2-key-features)
 3. [Try liiive](#3-try-liiive)
 4. [Non-Goals](#4-non-goals)
-5. [Open Source vs. liiive.now](#5-open-source-vs-liivenow)
+5. [Open Source vs. liiive.now](#5-open-source-vs-liiivenow)
 6. [Architecture](#6-architecture)
 7. [Self-Hosting](#7-self-hosting) - **on your own server**
-   - [Prerequisites](#7-1-prerequisites)
-   - [Development Deployment](#7-2-development-deployment)
-   - [Production Deployment](#7-3-production-deployment)
+   - [Prerequisites](#71-prerequisites)
+   - [Development Deployment](#72-development-deployment)
+   - [Production Deployment](#73-production-deployment)
 8. [Managed Hosting](#8-managed-hosting) - **no server required**
 9. [Contributing](#9-contributing)
 10. [License](#10-license)
