@@ -62,23 +62,21 @@ liiive can be used in three ways:
 
 ### 4.1 Public Hosted Service (liiive.now)
 
-The public instance at [liiive.now](https://liiive.now) is operated as a hosted service with managed infrastructure. It provdes unlimited free basic accounts, an optional paid plan for additional storage, and is suitable for workshops, teaching and general use.
+The public hosted service at [liiive.now](https://liiive.now) is the quickest way to get started – no setup required. It offers unlimited free basic accounts and an optional paid plan for additional storage, making it well-suited for workshops, teaching and general use.
 
 ### 4.2 Self-Hosting (This Repository)
 
-You can deploy liiive on your own server infrastructure using the code and deployment instructions provided in this repository.
+For full freedom and independence, you can deploy liiive on your own server using this repository. Self-hosting gives you:
 
-Self-hosting provides:
-
-- Full control over data and storage
+- Complete ownership of your data and storage
 - Custom domain configuration
 - Independent infrastructure
 
-See the [Self-Hosting Guide](#5-self-hosting-guide) below.
+See the [Self-Hosting Guide](#5-self-hosting-guide) below to get started.
 
 ### 4.3 Managed hosting
 
-If your institution or project doesn't have in-house IT support or server infrastructure, managed hosting provides a dedicated, privately hosted liiive instance – optionally with custom branding or domain – without the overhead of having to set up and manage a server yourself.
+If your institution or project doesn't have in-house IT support or server infrastructure, managed hosting offers a dedicated, privately hosted liiive instance – optionally with custom branding or domain – without the overhead of having to set up and manage a server yourself.
 
 Managed hosting includes:
 
@@ -86,9 +84,7 @@ Managed hosting includes:
 - Updates and ongoing maintenance
 - Priority technical support
 
-For pricing details or to discuss project requirements, please contact [hello@rainersimon.io](mailto:hello@rainersimon.io).
-
-Your subscription directly supports the continued maintenance and development of liiive as an open-source project.
+Subscriptions directly support the continued development and maintenance of liiive as an open-source project. For pricing or to discuss your project requirements, contact [hello@rainersimon.io](mailto:hello@rainersimon.io).
 
 ## 5. Self-Hosting Guide
 
