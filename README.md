@@ -70,7 +70,7 @@ liiive can be used in three ways:
 
 ### 5.1 Public Hosted Service (liiive.now)
 
-The public hosted service at [liiive.now](https://liiive.now) is the fastest way to get started – no setup required. It offers unlimited free basic accounts, with an optional paid plan for additional storage. Built on the same open-source codebase, it's well suited for workshops, teaching, and everyday use.
+The public hosted service at [liiive.now](https://liiive.now) is the fastest way to get started – no setup required. It offers unlimited free basic accounts, with an optional paid plan for additional storage. Built on the same open-source codebase, it provides a ready-to-use solution for workshops, teaching, and everyday use.
 
 ### 5.2 Self-Hosting (This Repository)
 
