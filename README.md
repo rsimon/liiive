@@ -12,7 +12,7 @@ Explore visual materials like artworks, manuscripts, maps, or historical documen
 2. [Key Features](#2-key-features)
 3. [Try liiive](#3-try-liiive)
 4. [Non-Goals](#4-non-goals)
-5. [Open Source vs. liiive.now](#5-open-source-vs-liiivenow)
+5. [Open Source vs. liiive.now](#5-open-source-version-vs-liiivenow)
 6. [Architecture](#6-architecture)
 7. [Self-Hosting](#7-self-hosting) - **on your own server**
    - [Prerequisites](#71-prerequisites)
