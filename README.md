@@ -10,13 +10,14 @@ Explore visual materials like artworks, manuscripts, maps, or historical documen
 
 1. [Overview](#1-overview)
 2. [Key Features](#2-key-features)
-3. [Try liiive](#3-try-liiive)
-4. [Deployment Options](#4-deployment-options)
-5. [Self-Hosting Guide](#5-self-hosting-guide)
-6. [Non-Goals](#6-non-goals)
-7. [Contributing](#7-contributing)
-8. [License](#8-license)
-9. [Supporters](#9-supporters)
+3. [Architecture](#3-architecture)
+4. [Try liiive](#4-try-liiive)
+5. [Deployment Options](#5-deployment-options)
+6. [Self-Hosting Guide](#6-self-hosting-guide)
+7. [Non-Goals](#7-non-goals)
+8. [Contributing](#8-contributing)
+9. [License](#9-license)
+10. [Supporters](#10-supporters)
 
 ## 1. Overview
 
@@ -55,6 +56,15 @@ The easiest way to try liiive – no installation needed – is via the public h
 4. Collaborate instantly – even without a login
 
 [liiive.now](https://liiive.now) runs on the same open-source codebase contained in this repository.
+
+## 3. Architecture
+
+liiive consists of:
+- A web frontend built with [Astro](https://astro.build/) and [React](https://react.dev/)
+- Real-time collaborative synchronization using [Yjs](https://yjs.dev/) and [Hocuspocus](https://github.com/ueberdosis/hocuspocus)
+- Backend services (database, storage, authentication) powered by [Supabase](https://supabase.com/)
+- Supabase Studio backend admin environment (optional)
+- Docker-based infrastructure for fully self-hosted deployment
 
 ## 4. Deployment Options
 
