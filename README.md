@@ -25,7 +25,7 @@ Explore visual materials like artworks, manuscripts, maps, or historical documen
 
 ## 1. What is liiive?
 
-liiive is a browser-based collaboration tool for exploring and annotate digital images together, in real time. Built on the [IIIF (International Image Interoperability Framework)](https://iiif.io) standard, it's designed for researchers, educators, students, and cultural heritage professionals working with high-resolution images.
+liiive is a browser-based collaboration tool for exploring and annotating digital images together, in real time. Built on the [IIIF (International Image Interoperability Framework)](https://iiif.io) standard, it's designed for researchers, educators, students, and cultural heritage professionals working with high-resolution images.
 
 ## 2. Key Features
 
@@ -124,7 +124,7 @@ The full deployment guide is available here: [production deployment](guides/prod
 
 ## 8. Managed Hosting
 
-If your institution or project doesn't have in-house IT support or server infrastructure, managed hosting provides a dedicated, privately hosted liiive instance – optionally with custom branding or domain – without the overhead of setup and server management.
+If your institution or project doesn't have in-house IT support or server infrastructure, managed hosting provides a dedicated, privately hosted liiive instance – optionally with custom branding or domain – without the overhead of having to set up and manage a server yourself.
 
 Managed hosting includes:
 
