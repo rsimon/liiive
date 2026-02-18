@@ -8,9 +8,10 @@ Explore visual materials like artworks, manuscripts, maps, or historical documen
 
 ## Contents
 
-1. [What is liiive?](#1-what-is-liiive)
+1. [Overview](#1-overview)
 2. [Key Features](#2-key-features)
 3. [Try liiive](#3-try-liiive) - **no installation needed**
+4. [Deployment Options](#4-deployment-options)
 4. [Open Source vs. liiive.now](#4-open-source-version-vs-liiivenow)
 5. [Architecture](#5-architecture)
 6. [Self-Hosting](#6-self-hosting) - **on your own server**
@@ -23,7 +24,7 @@ Explore visual materials like artworks, manuscripts, maps, or historical documen
 10. [License](#10-license)
 11. [Supporters](#11-supporters)
 
-## 1. What is liiive?
+## 1. Overview
 
 liiive is a browser-based collaboration tool for exploring and annotating digital images together, in real time. Built on the [IIIF (International Image Interoperability Framework)](https://iiif.io) standard, it's designed for researchers, educators, students, and cultural heritage professionals working with high-resolution images.
 
