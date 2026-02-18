@@ -68,7 +68,7 @@ liiive is not intended to be:
 
 ## 5. Open Source version vs liiive.now
 
-This repository contains the full-featured, self-hostable open-source core of liiive. This is the same codebase that powers [liiive.now](https://liiive.now), a hosted service with managed infrastructure, unlimited free basic accounts, and an optional paid plan for additional storage
+This repository contains the full-featured, self-hostable open-source core of liiive. This is the same codebase that powers [liiive.now](https://liiive.now), a hosted service with managed infrastructure, unlimited free basic accounts, and an optional paid plan for additional storage.
 
 To deploy liiive on your own infrastructure, see [Self-Hosting](#7-self-hosting). For a dedicated, privately hosted instance without the need to manage servers yourself, see [Managed Hosting](#8-managed-hosting).
 
