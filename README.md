@@ -11,7 +11,7 @@ Explore visual materials like artworks, manuscripts, maps, or historical documen
 1. [What is liiive?](#1-what-is-liiive)
 2. [Key Features](#2-key-features)
 3. [Try liiive](#3-try-liiive)
-4. [Non-Goals](#4-none-goals)
+4. [Non-Goals](#4-non-goals)
 5. [Open Source vs. liiive.now](#5-open-source-vs-liivenow)
 6. [Architecture](#6-architecture)
 7. [Self-Hosting](#7-self-hosting) - **on your own server**
