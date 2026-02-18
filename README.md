@@ -11,7 +11,6 @@ Explore visual materials like artworks, manuscripts, maps, or historical documen
 1. [Overview](#1-overview)
 2. [Key Features](#2-key-features)
 3. [Try liiive](#3-try-liiive) - **no installation needed**
-4. [Deployment Options](#4-deployment-options)
 4. [Open Source vs. liiive.now](#4-open-source-version-vs-liiivenow)
 5. [Architecture](#5-architecture)
 6. [Self-Hosting](#6-self-hosting) - **on your own server**
