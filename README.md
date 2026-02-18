@@ -150,4 +150,4 @@ Thanks to the following supporters for funding parts of this work:
 
 - [Department of Digital Humanities](https://digital-humanities.uni-graz.at/), University of Graz, Project [DHInfra.at](https://dhinfra.at), funded through programme [(Digitale) Forschungsinfrastruktur](https://www.bmfwf.gv.at/wissenschaft/hochschulgovernance/steuerungsinstrumente/ausschreibung-digi.html)
 
-If you want to become a supporter, please contact [hello@rainersimon.io](mailto:hello@rainersimon.io). 
+If you want to become a supporter, please contact me at [hello@rainersimon.io](mailto:hello@rainersimon.io). 
