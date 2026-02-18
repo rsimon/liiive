@@ -57,7 +57,7 @@ The easiest way to try liiive – no installation needed – is via the public h
 
 [liiive.now](https://liiive.now) runs on the same open-source codebase contained in this repository.
 
-## 3. Architecture
+## 4. Architecture
 
 liiive consists of:
 - A web frontend built with [Astro](https://astro.build/) and [React](https://react.dev/)
@@ -66,15 +66,15 @@ liiive consists of:
 - Supabase Studio backend admin environment (optional)
 - Docker-based infrastructure for fully self-hosted deployment
 
-## 4. Deployment Options
+## 5. Deployment Options
 
 liiive can be used in three ways:
 
-### 4.1 Public Hosted Service (liiive.now)
+### 5.1 Public Hosted Service (liiive.now)
 
 The public hosted service at [liiive.now](https://liiive.now) is the quickest way to get started – no setup required. It offers unlimited free basic accounts and an optional paid plan for additional storage, making it well-suited for workshops, teaching and general use.
 
-### 4.2 Self-Hosting (This Repository)
+### 5.2 Self-Hosting (This Repository)
 
 For full freedom and independence, you can deploy liiive on your own server using this repository. Self-hosting gives you:
 
@@ -84,7 +84,7 @@ For full freedom and independence, you can deploy liiive on your own server usin
 
 See the [Self-Hosting Guide](#5-self-hosting-guide) below to get started.
 
-### 4.3 Managed hosting
+### 5.3 Managed hosting
 
 If your institution or project doesn't have in-house IT support or server infrastructure, managed hosting offers a dedicated, privately hosted liiive instance – optionally with custom branding or domain – without the overhead of having to set up and manage a server yourself.
 
@@ -96,18 +96,18 @@ Managed hosting includes:
 
 Subscriptions directly support the continued development and maintenance of liiive as an open-source project. For pricing or to discuss your project requirements, contact [hello@rainersimon.io](mailto:hello@rainersimon.io).
 
-## 5. Self-Hosting Guide
+## 6. Self-Hosting Guide
 
 liiive can be self-hosted in two modes: as a local development setup intended for frontend development, and a fully containerized production deployment for institutional or public use.
 
-### 5.1 Prerequisites
+### 6.1 Prerequisites
 
 To deploy liiive, ensure you have the following installed:
 
 - Docker 24.0+ and Docker Compose 2.x
 - Node.js 20+ and npm (for development deployment only)
 
-### 5.2 Development Deployment
+### 6.2 Development Deployment
 
 The development setup is intended for developers working on the liiive client, with hot reloading and local backend.
 
@@ -115,7 +115,7 @@ In development mode, the Supabase backend and admin UI ("Supabase Studio") as we
 
 The full deployment guide is available here: [development deployment](guides/dev-deployment.md)
 
-### 5.3 Production Deployment
+### 6.3 Production Deployment
 
 The production deployment is a fully containerized setup for a Linux/Docker host, with all service components: 
 
@@ -137,24 +137,24 @@ The production deployment is a fully containerized setup for a Linux/Docker host
 
 The full deployment guide is available here: [production deployment](guides/prod-deployment.md)
 
-## 6. Non-Goals
+## 7. Non-Goals
 
 liiive is not intended to be:
 - A general-purpose IIIF viewer
 - A digital asset management system
 - A replacement for long-term annotation repositories
 
-## 7. Contributing
+## 8. Contributing
 
 Contributions are welcome! Please use the [issue tracker](https://github.com/rsimon/liiive/issues) to discuss major changes or new features before submitting a pull request.
 
-## 8. License
+## 9. License
 
 liiive is licensed under the terms of the [MIT License](LICENSE).
 
 For convenience, this repository includes Docker configuration for the Supabase backend. Supabase is licensed under the [Apache 2 License](supabase/docker/LICENSE).
 
-## 9. Supporters
+## 10. Supporters
 
 Thanks to the following supporters for funding parts of this work:
 
