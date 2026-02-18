@@ -54,7 +54,7 @@ The easiest way to try liiive – no installation needed – is via the public h
 3. Share your unique room link with others
 4. Collaborate instantly – even without a login
 
-[liiive.now](https://liiive.now) runs on the same core codebase contained in this repository.
+[liiive.now](https://liiive.now) runs on the same open-source codebase contained in this repository.
 
 ## 4. Deployment Options
 
