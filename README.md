@@ -11,14 +11,14 @@ Explore visual materials like artworks, manuscripts, maps, or historical documen
 1. [What is liiive?](#1-what-is-liiive)
 2. [Key Features](#2-key-features)
 3. [Try liiive](#3-try-liiive) - **no installation needed**
-4. [Non-Goals](#4-non-goals)
-5. [Open Source vs. liiive.now](#5-open-source-version-vs-liiivenow)
-6. [Architecture](#6-architecture)
-7. [Self-Hosting](#7-self-hosting) - **on your own server**
-   - [Prerequisites](#71-prerequisites)
-   - [Development Deployment](#72-development-deployment)
-   - [Production Deployment](#73-production-deployment)
-8. [Managed Hosting](#8-managed-hosting) - **no server required**
+4. [Open Source vs. liiive.now](#4-open-source-version-vs-liiivenow)
+5. [Architecture](#5-architecture)
+6. [Self-Hosting](#6-self-hosting) - **on your own server**
+   - [Prerequisites](#61-prerequisites)
+   - [Development Deployment](#62-development-deployment)
+   - [Production Deployment](#63-production-deployment)
+7. [Managed Hosting](#7-managed-hosting) - **no server required**
+8. [Non-Goals](#8-non-goals)
 9. [Contributing](#9-contributing)
 10. [License](#10-license)
 11. [Supporters](#11-supporters)
@@ -59,20 +59,13 @@ The easiest way to try liiive–no installation needed–is via the hosted servi
 3. Share your unique room link with others
 4. Collaborate instantly, even without a login
 
-## 4. Non-Goals
-
-liiive is not intended to be:
-- A general-purpose IIIF viewer
-- A digital asset management system
-- A replacement for long-term annotation repositories
-
-## 5. Open Source version vs liiive.now
+## 4. Open Source version vs liiive.now
 
 This repository contains the full-featured, self-hostable open-source core of liiive. This is the same codebase that powers [liiive.now](https://liiive.now), a hosted service with managed infrastructure, unlimited free basic accounts, and an optional paid plan for additional storage.
 
 To deploy liiive on your own infrastructure, see [Self-Hosting](#7-self-hosting). For a dedicated, privately hosted instance without the need to manage servers yourself, see [Managed Hosting](#8-managed-hosting).
 
-## 6. Architecture
+## 5. Architecture
 
 liiive consists of:
 - A web frontend built with [Astro](https://astro.build/) and [React](https://react.dev/)
@@ -81,18 +74,18 @@ liiive consists of:
 - Supabase Studio backend admin environment (optional)
 - Docker-based infrastructure for fully self-hosted deployment
 
-## 7. Self-Hosting
+## 6. Self-Hosting
 
 liiive can be self-hosted in two modes: as a local development setup intended for frontend development, and a fully containerized production deployment for institutional or public use.
 
-### 7.1 Prerequisites
+### 6.1 Prerequisites
 
 To deploy liiive, ensure you have the following installed:
 
 - Docker 24.0+ and Docker Compose 2.x
 - Node.js 20+ and npm (for development deployment only)
 
-### 7.2 Development Deployment
+### 6.2 Development Deployment
 
 The development setup is intended for developers working on the liiive client, with hot reloading and local backend.
 
@@ -100,7 +93,7 @@ In development mode, the Supabase backend and admin UI ("Supabase Studio") as we
 
 The full deployment guide is available here: [development deployment](guides/dev-deployment.md)
 
-### 7.3 Production Deployment
+### 6.3 Production Deployment
 
 The production deployment is a fully containerized setup for a Linux/Docker host, with all service components: 
 
@@ -122,7 +115,7 @@ The production deployment is a fully containerized setup for a Linux/Docker host
 
 The full deployment guide is available here: [production deployment](guides/prod-deployment.md)
 
-## 8. Managed Hosting
+## 7. Managed Hosting
 
 If your institution or project doesn't have in-house IT support or server infrastructure, managed hosting provides a dedicated, privately hosted liiive instance – optionally with custom branding or domain – without the overhead of having to set up and manage a server yourself.
 
@@ -133,6 +126,13 @@ Managed hosting includes:
 - Priority technical support
 
 For pricing details or to discuss project requirements, please contact [hello@rainersimon.io](mailto:hello@rainersimon.io). Your subscription also directly supports the continued maintenance and development of liiive as an open-source project.
+
+## 8. Non-Goals
+
+liiive is not intended to be:
+- A general-purpose IIIF viewer
+- A digital asset management system
+- A replacement for long-term annotation repositories
 
 ## 9. Contributing
 
