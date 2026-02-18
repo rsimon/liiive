@@ -2,7 +2,7 @@
 
 liiive is an open-source, web-based tool for **real-time collaborative annotation** of IIIF images.
 
-Explore visual materials like artworks, manuscripts, maps, or historical documents together–live, in the browser–with shared cursors, synchronized annotations, and rich-text comments.
+Explore artworks, manuscripts, maps, and other visual materials together – live, in the browser – with shared cursors, synchronized annotations, and rich-text comments.
 
 ![Screenshot of the liiive annotation environment](/screenshot.jpg "Screenshot of the liiive annotation environment")
 
@@ -10,17 +10,13 @@ Explore visual materials like artworks, manuscripts, maps, or historical documen
 
 1. [Overview](#1-overview)
 2. [Key Features](#2-key-features)
-3. [Try liiive](#3-try-liiive) - no installation needed
-4. [Open Source vs. liiive.now](#4-open-source-version-vs-liiivenow)
-5. [Self-Hosting](#5-self-hosting) - on your own server
-   - [Prerequisites](#51-prerequisites)
-   - [Development Deployment](#52-development-deployment)
-   - [Production Deployment](#53-production-deployment)
-6. [Managed Hosting](#6-managed-hosting) - no server required
-7. [Non-Goals](#7-non-goals)
-8. [Contributing](#8-contributing)
-9. [License](#9-license)
-10. [Supporters](#10-supporters)
+3. [Try liiive](#3-try-liiive)
+4. [Deployment Options](#4-deployment-options)
+5. [Self-Hosting Guide](#5-self-hosting-guide)
+6. [Non-Goals](#6-non-goals)
+7. [Contributing](#7-contributing)
+8. [License](#8-license)
+9. [Supporters](#9-supporters)
 
 ## 1. Overview
 
@@ -51,20 +47,50 @@ liiive is a browser-based collaboration tool for exploring and annotating digita
 
 ## 3. Try liiive
 
-The easiest way to try liiive–no installation needed–is via the hosted service at [liiive.now](https://liiive.now).
+The easiest way to try liiive – no installation needed – is via the public hosted service at [liiive.now](https://liiive.now).
 
 1. Paste any URL to a IIIF Presentation or Image manifest in the search box
 2. Hit the 'Go liiive' button
 3. Share your unique room link with others
 4. Collaborate instantly, even without a login
 
-## 4. Open Source version vs liiive.now
+liiive.now runs on the same core codebase contained in this repository.
 
-This repository contains the full-featured, self-hostable open-source core of liiive. This is the same codebase that powers [liiive.now](https://liiive.now), a hosted service with managed infrastructure, unlimited free basic accounts, and an optional paid plan for additional storage.
+## 4. Deployment Options
 
-To deploy liiive on your own infrastructure, see [Self-Hosting](#7-self-hosting). For a dedicated, privately hosted instance without the need to manage servers yourself, see [Managed Hosting](#8-managed-hosting).
+liiive can be used in three ways:
 
-## 5. Self-Hosting
+### 4.1 Public Hosted Service (liiive.now)
+
+The public instance at [liiive.now](https://liiive.now) is operated as a hosted service with managed infrastructure. It provdes unlimited free basic accounts, an optional paid plan for additional storage, and is suitable for workshops, teaching and general use.
+
+### 4.2 Self-Hosting (This Repository)
+
+You can deploy liiive on your own server infrastructure using the code and deployment instructions provided in this repository.
+
+Self-hosting provides:
+
+- Full control over data and storage
+- Custom domain configuration
+- Independent infrastructure
+
+See the [Self-Hosting Guide](#5-self-hosting-guide) below.
+
+### 4.3 Managed hosting
+
+If your institution or project doesn't have in-house IT support or server infrastructure, managed hosting provides a dedicated, privately hosted liiive instance – optionally with custom branding or domain – without the overhead of having to set up and manage a server yourself.
+
+Managed hosting includes:
+
+- Deployment and server management
+- Updates and ongoing maintenance
+- Priority technical support
+
+For pricing details or to discuss project requirements, please contact [hello@rainersimon.io](mailto:hello@rainersimon.io).
+
+Your subscription directly supports the continued maintenance and development of liiive as an open-source project.
+
+## 5. Self-Hosting Guide
 
 liiive can be self-hosted in two modes: as a local development setup intended for frontend development, and a fully containerized production deployment for institutional or public use.
 
@@ -105,36 +131,24 @@ The production deployment is a fully containerized setup for a Linux/Docker host
 
 The full deployment guide is available here: [production deployment](guides/prod-deployment.md)
 
-## 6. Managed Hosting
-
-If your institution or project doesn't have in-house IT support or server infrastructure, managed hosting provides a dedicated, privately hosted liiive instance – optionally with custom branding or domain – without the overhead of having to set up and manage a server yourself.
-
-Managed hosting includes:
-
-- Deployment and server management
-- Updates and ongoing maintenance
-- Priority technical support
-
-For pricing details or to discuss project requirements, please contact [hello@rainersimon.io](mailto:hello@rainersimon.io). Your subscription also directly supports the continued maintenance and development of liiive as an open-source project.
-
-## 7. Non-Goals
+## 6. Non-Goals
 
 liiive is not intended to be:
 - A general-purpose IIIF viewer
 - A digital asset management system
 - A replacement for long-term annotation repositories
 
-## 8. Contributing
+## 7. Contributing
 
 Contributions are welcome! Please use the [issue tracker](https://github.com/rsimon/liiive/issues) to discuss major changes or new features before submitting a pull request.
 
-## 9. License
+## 8. License
 
 liiive is licensed under the terms of the [MIT License](LICENSE).
 
 For convenience, this repository includes Docker configuration for the Supabase backend. Supabase is licensed under the [Apache 2 License](supabase/docker/LICENSE).
 
-## 10. Supporters
+## 9. Supporters
 
 Thanks to the following supporters for funding parts of this work:
 
