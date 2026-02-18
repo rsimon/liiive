@@ -155,7 +155,7 @@ You should now see the liiive frontend running in development mode, connected to
 
 liiive supports social login via GitHub and Google. Configuration involves minor changes in the Supabase backend configuration, as well as setup steps in your GitHub and Google accounts. 
 
-Full social login configuration information is available here: [social login configuration](guides/social-login.md)
+Full social login configuration information is available here: [social login configuration](social-login.md)
 
 ## 7. Stopping and Resetting the Local Environment
 
