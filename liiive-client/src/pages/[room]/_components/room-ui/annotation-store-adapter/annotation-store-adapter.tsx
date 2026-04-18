@@ -114,7 +114,9 @@ export const AnnotationStoreAdapter = (props: AnnotationStoreAdapterProps) => {
     const initial = yjsStore.getAnnotations(canvas.id);
     if (initial.length > 0)
       annotoriousStore.bulkAddAnnotations(initial, true, Origin.REMOTE);
-
+    else 
+      annotoriousStore.clear();
+    
     return () => {
       annotoriousStore.unobserve(onAnnotoriousChange);
       unobserveYJS();
